@@ -1,0 +1,24 @@
+
+<div class="col-sm-6 col-md-4" ng-repeat='project in projects | orderBy: "title"' >
+
+    <div id="block-header" class="col-sm-12 clearfix">
+        <p id="blockHeader">
+            {{project.title}}
+        </p>
+    </div>
+    <div id="block-body" class="clearfix">
+        {{project.summary}}<br><div class='pull-right'><a href='{{project.url}}' class='btn btn-primary' title="Project URL">{{project.title}}</a></div><br>
+        <p>
+            <a href='#/project/{{project.id}}'>{{project.notes.length}}
+                <span ng-show='project.notes.length < 1'>notes</span>
+                <span ng-show='project.notes.length == 1'>note</span>
+                <span ng-hide='project.notes.length <= 1'>notes</span>
+            </a>
+            <p ng-show='project.id == selectedProjectId'>
+                <span class='well well-sm' ng-repeat='note in project.notes | orderBy: "id"'>{{note.content}}</span>
+        </p>
+    </p>
+
+
+</div>
+</div>

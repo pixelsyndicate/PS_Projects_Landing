@@ -1,0 +1,165 @@
+/* This code is only meant for previewing your Reflow design. */
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    -webkit-box-shadow: rgb(110, 110, 110) 0px 3px 3px 0px;
+    box-shadow: rgb(110, 110, 110) 0px 3px 3px 0px;
+}
+
+#box {
+    float: none;
+    height: 150px;
+    margin-left: auto;
+    margin-top: 50px;
+    clear: none;
+    width: 85.334621%;
+    min-height: 50px;
+    background-image:-webkit-linear-gradient(38deg, rgb(104, 115, 255) 0%, rgb(85, 71, 255) 0%, rgba(158, 154, 255, 0.74902) 99%);
+    background-image: linear-gradient(52deg, rgb(104, 115, 255) 0%, rgb(85, 71, 255) 0%, rgba(158, 154, 255, 0.74902) 99%);
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.298039) -4px 3px 3px 0px;
+    box-shadow: rgba(0, 0, 0, 0.298039) -4px 3px 3px 0px;
+    margin-right: auto;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+body {
+    font-family: open-sans;
+    font-size: 32px;
+}
+
+#text {
+    float: none;
+    font-size: 3em;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1em;
+    margin: 29px auto auto;
+    clear: none;
+    min-height: 0px;
+    text-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px;
+}
+
+#block {
+    float: left;
+    height: 170px;
+    margin-left: 8.531849%;
+    margin-top: 39px;
+    clear: none;
+    width: 40.267932%;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.298039) 0px 3px 3px 0px;
+    box-shadow: rgba(0, 0, 0, 0.298039) 0px 3px 3px 0px;
+}
+
+#block-header {
+    float: none;
+    height: 31px;
+    margin-left: auto;
+    margin-top: -17px;
+    clear: none;
+    width: 97.6%;
+    background-image:-webkit-linear-gradient(38deg, rgb(104, 115, 255) 0%, rgba(158, 154, 255, 0.74902) 0%, rgb(85, 71, 255) 100%);
+    background-image: linear-gradient(52deg, rgb(104, 115, 255) 0%, rgba(158, 154, 255, 0.74902) 0%, rgb(85, 71, 255) 100%);
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid rgb(110, 110, 110);
+    min-width: 0px;
+    margin-right: auto;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#block-body {
+    float: none;
+    height: 143px;
+    margin-left: auto;
+    margin-top: 7px;
+    clear: none;
+    width: 97.5%;
+    margin-right: auto;
+    min-width: 0px;
+    padding-top: 6px;
+}
+
+#text1 {
+    float: left;
+    font-size: 0.8em;
+    width: auto;
+    height: auto;
+    text-align: left;
+    font-weight: 600;
+    line-height: 1em;
+    margin-left: 1.238761%;
+    margin-top: 3px;
+    clear: none;
+    min-height: 0px;
+    font-family: open-sans-condensed;
+}
+
+@media only screen and (max-width: 800px) {
+    #text {
+        margin-top: 29px;
+        margin-left: auto;
+        clear: none;
+        margin-right: auto;
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #text {
+        margin-top: 25px;
+        margin-left: auto;
+        clear: none;
+        margin-right: auto;
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #text {
+        font-size: 2em;
+        margin-top: 48px;
+        margin-left: auto;
+        clear: none;
+        margin-right: auto;
+        float: none;
+    }
+
+    #text1 {
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #text {
+        font-size: 1.5em;
+        margin-top: 50px;
+        margin-left: auto;
+        clear: none;
+        margin-right: auto;
+        float: none;
+    }
+
+    #text1 {
+        font-size: 0.6em;
+        margin-top: 6px;
+        margin-left: 2.853535%;
+        clear: none;
+    }
+}
+
