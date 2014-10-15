@@ -36,7 +36,7 @@ body {
 
 #pageTitle {
     float: none;
-    font-size: 2.5em;
+    font-size: 3em;
     position: relative;
     width: auto;
     height: auto;
@@ -129,7 +129,7 @@ body {
 #psBlock {
     position: relative;    
     top:-35px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 @media only screen and (max-width: 800px) {
@@ -144,12 +144,14 @@ body {
   /* Style adjustments for viewports 480px and over go here */
 
 #pageTitle {
-    display:none;
+    font-size:.9em;
+    
 }}
 
 @media only screen and (max-width: 320px) {
   /* Style adjustments for viewports 480px and over go here */
 
 #pageTitle {
-    display:none;
+    font-size:.8em;
+    top:-35px;
 }}

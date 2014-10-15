@@ -1,22 +1,47 @@
 
-<div class="col-sm-6 col-md-4" ng-repeat='project in projects | orderBy: "title"' >
+<div class="col-sm-6 col-md-4 " ng-repeat='project in projects | orderBy: "title"' >
 
     <div id="block-header" class="col-sm-12 clearfix">
         <p id="blockHeader">
             {{project.title}}
         </p>
     </div>
-    <div id="block-body" class="clearfix">
-        {{project.summary}}<br><div class='pull-right'><a href='{{project.url}}' class='btn btn-primary' title="Project URL">{{project.title}}</a></div><br>
-        <p>
-            <a href='#/project/{{project.id}}'>{{project.notes.length}}
-                <span ng-show='project.notes.length < 1'>notes</span>
-                <span ng-show='project.notes.length == 1'>note</span>
-                <span ng-hide='project.notes.length <= 1'>notes</span>
+    <div id="block-body" class="">
+        {{project.summary}}
+        <br>
+        <div class='pull-right clearfix'>
+            <a href='{{project.url}}' class='btn btn-primary' title="Project URL">
+                <i class='glyphicon glyphicon-eye-open'></i> &nbsp; <big>{{project.title}}</big>
             </a>
-            <p ng-show='project.id == selectedProjectId'>
-                <span class='well well-sm' ng-repeat='note in project.notes | orderBy: "id"'>{{note.content}}</span>
-        </p>
+        </div>
+
+
+        <br>
+        <p>
+            <hr class='clearfix'>
+        <a href='#/project/{{project.id}}'>
+            <i class='glyphicon glyphicon-eye-open' ng-hide='project.notes.length == 0'></i> &nbsp; <big>{{project.notes.length}}
+</big>
+            <!-- always show unless -->
+            <span ng-hide='project.notes.length == 1'>notes 
+            </span>
+
+            <!-- only show if -->
+            <span ng-show='project.notes.length == 1'>note
+            </span>
+        </a>
+        <a class="btn btn-default pull-right" href="#/addNote/{{project.id}}" role="button">
+           <i class='glyphicon glyphicon-plus'></i> &nbsp; <big>Note </big>
+        </a>
+    </p>
+    <p class='well well-sm' ng-show='project.id == selectedProjectId'>
+        <span  ng-repeat='note in project.notes | orderBy: "id"'>
+            {{note.content}} 
+            <a class="btn btn-primary pull-right" href ng-click='onDelete(note.id)'>
+                 <i class='glyphicon glyphicon-minus'></i> &nbsp; <big>Note </big>
+            </a>
+        </span>
+
     </p>
 
 

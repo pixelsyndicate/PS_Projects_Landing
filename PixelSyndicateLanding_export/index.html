@@ -20,21 +20,25 @@
         <link rel="stylesheet" href="view/projects.css">
 
         <script src="index.js"></script>
+        <script src="controller/PageController.js"></script>
         <script src="controller/ProjectsController.js"></script>
+        <script src="controller/NotesController.js"></script>
+        <script src="controller/AddNoteController.js"></script>
+        <script src="controller/DeleteNoteController.js"></script>
         <script src='model/ProjectModel.js'></script>
         <script src="model/NoteModel.js"></script>
 
 
         <title>PixelSyndicate Projects</title>
     </head>
-    <body>
-        <div id="primaryContainer" class=" clearfix">
-            <div id="header-block" class="col-xs-12 clearfix">
-                    <img id='psBlock' src="psBlock.png" alt="logo" class="img-responsive pull-left clearfix">
-                    <div id="pageTitle" class="clearfix">Projects</div>
+    <body ng-controller='PageController'>
+        <div id="primaryContainer" class="">
+            <div id="header-block" class="col-xs-12 ">
+                <img id='psBlock' src="psBlock.png" alt="logo" class="img-responsive pull-left">
+                <div id="pageTitle" class="">{{PageTitle}}</div>
             </div>
-            <br><Br><br>
-            <div ng-view class='container clearfix'></div>
+            <br><Br>
+            <div ng-view class='container'></div>
 
         </div>
     </body>

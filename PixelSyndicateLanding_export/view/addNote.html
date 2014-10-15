@@ -1,0 +1,25 @@
+
+<div class='clearfix'>
+    <form name='addNote'>
+        <div class='form-group'>
+            <label for='noteContent' class='col-md-12'>
+                <small>Write yourself a note about the {{selectedProjectName}} project?</small>
+            </label>
+            <textarea id='noteContent' ng-model='note.content' class='form-control'></textarea>
+
+            <div class='pull-right '>
+                <button class='btn btn-primary' ng-click='createNote()' 
+                        ng-disabled='!note.content'>Save</button>
+                <button class='btn' ng-click='cancel()'>Cancel</button>  
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class='panel panel-info'><small>
+    <i>What's interesting about this is that the 
+        <code> &lt;textarea&gt;</code> is bound using</i> 
+    <code>ng-model='note.content'</code> 
+    <i> and the save button is disabled with </i> 
+    <code>ng-disabled='!note.content'</code> 
+    </small></div>
